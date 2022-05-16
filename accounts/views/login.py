@@ -29,4 +29,4 @@ class Login(View):
             messages.success(request, 'Invalid Username or Password')
             return redirect('login')
         login(request, user)
-        return redirect('register')
+        return redirect('homepage')
